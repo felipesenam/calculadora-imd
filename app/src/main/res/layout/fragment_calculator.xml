@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvFirstOperand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvOperator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="bottom|end"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnNum1"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_1"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum2"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_2"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum3"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_3"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum4"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_4"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnNum5"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_5"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum6"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_6"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum7"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_7"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum8"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_8"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnNum9"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_9"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnNum0"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardNumPress"
+                    android:text="@string/keyboard_0"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnOpPlus"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardOpPress"
+                    android:text="@string/keyboard_plus"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnOpMinus"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardOpPress"
+                    android:text="@string/keyboard_minus"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnOpMultiply"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardOpPress"
+                    android:text="@string/keyboard_multiply"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnOpSlash"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardOpPress"
+                    android:text="@string/keyboard_slash"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnFnDel"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardDelPress"
+                    android:text="@string/keyboard_del"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+
+                <Button
+                    android:id="@+id/btnFnResult"
+                    android:layout_width="@dimen/calculator_keyboard_button_size"
+                    android:layout_height="@dimen/calculator_keyboard_button_size"
+                    android:layout_margin="@dimen/calculator_keyboard_margin"
+                    android:background="@color/keyboard_background_color"
+                    android:onClick="calcKeyboardResPress"
+                    android:text="@string/keyboard_equal"
+                    android:textColor="@color/keyboard_font_color"
+                    android:textSize="24sp"
+                    app:backgroundTint="@color/keyboard_background_color" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

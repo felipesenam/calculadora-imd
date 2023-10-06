@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Calculadora IMD</string>
+    <string name="author">Desenvolvido por: Felipe Sena - 20190035710</string>
+    <string name="calculate_button_label">Calcular média</string>
+    <string name="calc_button_label">Calculadora</string>
+    <string name="notes_button_label">Notas</string>
+    <string name="keyboard_1">1</string>
+    <string name="keyboard_2">2</string>
+    <string name="keyboard_3">3</string>
+    <string name="keyboard_4">4</string>
+    <string name="keyboard_5">5</string>
+    <string name="keyboard_6">6</string>
+    <string name="keyboard_7">7</string>
+    <string name="keyboard_8">8</string>
+    <string name="keyboard_9">9</string>
+    <string name="keyboard_0">0</string>
+    <string name="keyboard_plus">\u002B</string>
+    <string name="keyboard_minus">\u002D</string>
+    <string name="keyboard_equal">\u003D</string>
+    <string name="keyboard_del">\u232B</string>
+    <string name="keyboard_multiply">\u00D7</string>
+    <string name="keyboard_slash">\u00F7</string>
+    <string name="invalid_operation">Operação não permitida</string>
+    <string name="grade1_hint">Digite a nota da 1ª unidade</string>
+    <string name="grade2_hint">Digite a nota da 2ª unidade</string>
+    <string name="grade3_hint">Digite a nota da 3ª unidade</string>
+    <string name="grades_result">Situação:</string>
+    <string name="appr_text">Com nota igual ou superior a %.2f na %s, você será aprovado.\n</string>
+    <string name="apprn_text">Com nota igual ou superior a %.2f na %s, você será aprovado por nota.\n</string>
+    <string name="failed_toast_message">Reprovado</string>
+    <string name="failed_message">Você foi reprovado.</string>
+    <string name="appr_toast_message">Aprovado por média</string>
+    <string name="appr_message">Você foi aprovado por média.</string>
+    <string name="apprn_toast_message">Aprovado por nota</string>
+    <string name="apprn_message">Você foi aprovado por nota.</string>
+</resources>

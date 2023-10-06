@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calculator_keyboard_margin">10px</dimen>
+    <dimen name="calculator_keyboard_button_size">75sp</dimen>
+</resources>
